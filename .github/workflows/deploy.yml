@@ -59,4 +59,4 @@ jobs:
         script: |
           docker stop camponeato
           docker rm --force camponeato
-          docker run -d -p 8081:8081 --network=rede --name camponeato leosfreitas/camponeato:${{ github.sha }}
+          docker run -d -p 8080:8080 --network=rede --name camponeato leosfreitas/camponeato:${{ github.sha }}
